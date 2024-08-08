@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fonte Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Login</title>
+    </head>
+<body class="body-login">
+    <!--Inicio header-->
+    <header>
+        <!--Inicio Container-->
+        <div class="container" style="padding-left: 10px">
+            <nav>
+                <!--Clicando na logo, redireciona para a página inicial-->
+                <a href="index.html">
+                    <img class="imglogo" src="../img/Logo_HandyMarket__1_-removebg-preview (1).png" alt="Logo" height="60%"
+                        width="60%" style="margin-left: 20px;">
+                </a>
+                <ul class="ul">
+                    <a href="index.html"><b>Ínicio</b></a>
+                    <a href="servicos.html"><b>Serviços</b></a>
+                    <a href="contato.html"><b>Contato</b></a>
+                    <a class="btn" href="login.html"><b>Login</b></a>
+                </ul>
+            </nav>
+        </div>
+        <!--Final Container-->
+    </header>
+    <div class="container-login">
+        <div class="image-container">
+            <img src="../img/BannerLogin-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="panel-container">
+            <div class="panel" id="panel">
+                <div class="login">
+                    <h2><b>Login</b></h2>
+                    <form id="loginForm">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Senha" required>
+                        <button type="submit" id="bt"><b>Entrar</b></button>
+                    </form>
+                </div>
+                <div class="register">
+                    <h2 id="h2-cad"><b>Cadastrar-se</b></h2>
+                    <form id="registerForm">
+                        <input id="nome" type="text" placeholder="Nome" required>
+                        <input id="sobrenome" type="text" placeholder="Sobrenome" required>
+                        <input id="email" type="email" placeholder="Email" required>
+                        <input id="senha" type="password" placeholder="Senha" required>
+                        <input id="confsenha" type="password" placeholder="Confirmação de Senha" required>
+                        <input id="datansc" type="date" placeholder="Data de Nascimento" required>
+                        <select id="genero" required>
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select>
+                        <button type="submit" id="bt-cad"><b>Cadastrar</b></button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="toggle-area" id="toggleArea">
+                <button id="toggleLogin"><b>Login</b></button>
+                <button id="toggleRegister"><b>Cadastrar-se</b></button>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/JsTrab.js"></script>
+    <script src="../javascript/register.js"></script>
+
+</body>
+</html>
