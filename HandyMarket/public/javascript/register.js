@@ -49,3 +49,43 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Formulário de registro não encontrado!');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById('loginEmail')?.value;
+            const senha = document.getElementById('loginSenha')?.value;
+
+            if (!email || !senha) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:3000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, senha })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    alert('Login bem-sucedido!');
+                    console.log(data);
+                } else {
+                    alert('Email ou senha incorretos.');
+                }
+            } catch (error) {
+                console.error('Erro ao enviar dados', error);
+                alert('Erro ao enviar dados.');
+            }
+        });
+    } else {
+        console.error('Formulário de login não encontrado!');
+    }
+});
