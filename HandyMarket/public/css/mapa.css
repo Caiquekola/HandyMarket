@@ -1,0 +1,81 @@
+.localizacao-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* #AAD3DF */
+
+.mapa {
+    display: flex;
+    justify-content:flex-end;
+    gap: 20px;
+    height: 0;
+    
+    padding-left: 20%;
+}
+#map {
+    height: 300px;
+    width: 700px;
+    border: none;        /* Remove qualquer borda */
+    background: none;
+    margin-top: -250px;  
+   
+}
+.input-group {
+    margin-top: 10px;
+}
+
+/* Estilo para o botão personalizado */
+.btn-custom {
+    background-color: #213644 !important;
+    border: 2px solid #1a2b36 !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+             /* Garante que o botão ocupe a largura total do container */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    position: static; /* Removendo qualquer posicionamento fixo */
+}
+
+.btn-custom:disabled {
+    background-color: #213644 !important;
+    color: rgba(255, 255, 255, 0.6) !important; /* Cor do texto em um tom mais claro */
+    border: 2px solid #213644 !important;
+    opacity: 1; /* Opacidade reduzida para indicar que está desabilitado */
+    cursor: not-allowed; /* Muda o cursor para indicar que está desabilitado */
+}
+
+.gps-icon {
+    position: absolute;
+    bottom: 20px; /* Ajuste para não sobrepor o botão */
+    right: 10px;
+    background-color: #213644;
+    border-radius: 50%;
+    border: 2px solid #213644;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #213644;
+    border-color: #213644;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.form-control {
+    background-color: #fff; /* Cor de fundo padrão para o input */
+}
+
+

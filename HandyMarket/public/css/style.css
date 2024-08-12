@@ -344,6 +344,10 @@ nav ul a:hover::after {
 .pesquisa-text::placeholder {
     color: #ffffff;
 }
+.localizacao .localizacao-imagem{
+    padding-left: 300px;
+}
+
 .localizacao .localizacao-text .caixa-pesquisa .pesquisa-btn {
     color: #ffffff;
     display: flex;

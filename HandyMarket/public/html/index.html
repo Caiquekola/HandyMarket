@@ -10,6 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>HandyMarket</title>
 </head>
 
@@ -57,9 +60,35 @@
                     </a>
 
                 </div>
+                
+            
             </div>
-            <div class="localizacao-imagem"></div>
+            <div class="localizacao-imagem">
+                <div class="mapa">
+                    <div class="mapa-controles">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div id="map" class="my-3">
+                                    <div id="gps-button" class="gps-icon" title="Localização via GPS">
+                                        <i class="fa fa-crosshairs"></i>
+                                    </div>
+                                </div> 
+                                <div class="input-group mt-2">
+                                    <input type="text" id="location-input" class="form-control" placeholder="Buscar por nome de local">
+                                    <div class="input-group-append">
+                                        <button id="search-location" class="btn btn-secondary"> <i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <button id="confirm-location" class="btn btn-custom btn-block mt-3" disabled>Confirmar sua localização</button> <!-- Botão abaixo do input -->
+                                <div id="weather-alerts" class="mt-3"></div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <!--Final Container-->
     </section>
     <section class="faca-login">
@@ -168,6 +197,11 @@
         <p>&copy; 2024 HandyMarket. Todos os direitos reservados.</p>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<script src="/public/javascript/mapa.js"></script> <!-- Arquivo JS separado -->
 </body>
 
 </html>
