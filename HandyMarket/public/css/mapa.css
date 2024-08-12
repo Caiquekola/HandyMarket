@@ -65,7 +65,7 @@
 }
 
 .btn-secondary {
-    color: #fff;
+    
     background-color: #213644;
     border-color: #213644;
 }
@@ -74,8 +74,5 @@
     margin-top: 10px;
 }
 
-.form-control {
-    background-color: #fff; /* Cor de fundo padrão para o input */
-}
 
 

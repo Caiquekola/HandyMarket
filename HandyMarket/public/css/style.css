@@ -345,7 +345,7 @@ nav ul a:hover::after {
     color: #ffffff;
 }
 .localizacao .localizacao-imagem{
-    padding-left: 300px;
+    padding-left: 50px;
 }
 
 .localizacao .localizacao-text .caixa-pesquisa .pesquisa-btn {

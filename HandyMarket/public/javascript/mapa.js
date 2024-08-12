@@ -121,4 +121,6 @@ function getWeatherAlerts(lat, lon) {
 }
 
 // Chama a função para inicializar o mapa
-initMap();
+document.addEventListener('DOMContentLoaded', function() {
+    initMap();
+});
