@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>HandyMarket</title>
+</head>
+<body>
+    <!--Inicio header-->
+    <header>
+       <!--Inicio Container-->
+       <div class="container" style="padding-left: 10px">
+        <nav>
+            <!--Clicando na logo, redireciona para a página inicial-->
+            <a href="indexPrestador.html">
+                <img class="../imglogo" src="../img/Logo_HandyMarket__1_-removebg-preview (1).png" alt="Logo" height="60%"
+                    width="60%" style="margin-left: 20px;">
+            </a>
+            <ul class="ul">
+                <a href="indexPrestador.html"><b>Ínicio</b></a>
+                <a href="servicos.html"><b>Meus Serviços</b></a>
+                <a href="contato.html"><b>Contato</b></a>
+                <a class="btn" href="javascript:void(0);" id="btnEmergencias" onclick="openSideMenu()"><b>Meu perfil</b></a>
+            </ul>
+        </nav>
+    </div>
+    <!--Final Container-->
+        <!-- Menu Lateral -->
+        <div id="sideMenu" class="side-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSideMenu()">&times;</a>
+            <a href="Terremotos.html">Avaliações</a>
+            <a href="deslizamentoDeTerra.html">Relatórios</a>
+            <a href="configuracao.html">Configurações de perfil</a>
+        </div>
+        </header>
+        <!--Final header-->
+        <div class="banner-prestador" >
+            <section class="banner-prestador">
+                <div class="banner-prestador-text">
+                    <h1>Juntos podemos fazer mais!</h1>
+                    <p>Estamos muito felizes com a nossa parceria e animados para ajudá-lo com o que precisa.</p>
+                
+                </div>
+            </section>
+        </div>
+     <section class="faca-login">
+        <!--Início Container-->
+        <div class="container">
+            <div class="faca-login-text">
+                <h3>Adicione seus serviços!</h3>
+                <p>Cadastre seus serviços e expanda seus negócios com a HandyMarket!
+                    Conecte-se com milhares de clientes em busca dos serviços que você oferece,
+                    aumente sua visibilidade e conquiste mais oportunidades.</p>
+                <a href="" class="btn btn-animado"><b>Adicionar</b></a>
+            </div>
+            <div class="faca-login-img">
+                <img src="../img/BannerAcheServico.png" alt="">
+            </div>
+        </div>
+        <!--Final Container-->
+    </section>
+ <!-- Rodapé -->
+ <footer>
+    <div class="container">
+        <p>&copy; 2024 HandyMarket. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="../javascript/JsTrab.js"></script>
+</body>
+</html>

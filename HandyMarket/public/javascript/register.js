@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             try {
-                const response = await fetch('http://localhost:3000/login', {
+                const response = await fetch('/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -75,10 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (response.ok) {
                     const data = await response.json();
-                    alert('Login bem-sucedido!');
-                    console.log(data);
+                    if (data.redirect) {
+                        window.location.href = data.redirect;
+                    } else {
+                        alert('Login bem-sucedido!');
+                        console.log(data);
+                    }
                 } else {
-                    alert('Email ou senha incorretos.');
+                    const message = await response.text();
+                    alert(message); // Exibe a mensagem de erro do servidor
                 }
             } catch (error) {
                 console.error('Erro ao enviar dados', error);

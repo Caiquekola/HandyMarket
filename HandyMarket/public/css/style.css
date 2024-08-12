@@ -643,3 +643,135 @@ button:hover {
         border-radius: 10px;
     }
 }
+.banner-prestador {
+    display: flex;
+    background-image: url('../img/upõ.png');
+    padding-top: 15px; padding-bottom: 0;
+    background-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.banner-prestador .banner-prestador-text {
+    margin: 25px;
+    padding: 0 40px;
+   
+}
+
+.banner-prestador .banner-prestador-text h1 {
+    font-size: 56px;
+    color: #18243D;
+    margin-bottom: 0px;
+    padding-left: 220px;
+    padding-right: 185px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    
+}
+
+.banner-prestador .banner-prestador-text p {
+    font-size: 20px;
+    max-width: 580px;
+    margin: 0 auto;
+    color: #F58013;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+
+
+/* Estilo para o menu lateral */
+.side-menu {
+    height: 100%; /* Ocupa toda a altura da tela */
+    width: 0; /* Largura inicial 0, para ocultar */
+    position: fixed; /* Fixa no lado direito da tela */
+    z-index: 1000; /* Aparece acima de outros elementos */
+    top: 0;
+    right: 0; /* Posiciona o menu no lado direito */
+    background-color: #213644; /* Cor de fundo do menu */
+    overflow-x: hidden; /* Esconde o overflow horizontal */
+    transition: 0.5s; /* Animação de abertura e fechamento */
+    padding-top: 60px; /* Espaço no topo */
+}
+
+/* Estilo para os links no menu */
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Estilo para o botão de fechar */
+.side-menu .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+.container-configuracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+    margin-top: 120px;
+}
+
+.panel-configuracao {
+    background-color: #F58013;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 85px;
+   
+}
+
+.panel-configuracao h2 {
+    color: #18243D;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: -50px;
+}
+
+.panel-configuracao form {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-configuracao label {
+    margin-bottom: 5px;
+    color: #18243D;
+    font-size: 14px;
+}
+
+.panel-configuracao input, 
+.panel-configuracao select {
+    padding: 13px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#bt-salvar {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: #18243D;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#bt-salvar:hover {
+    background-color: #c3cee6;
+    color: #18243D;
+}
